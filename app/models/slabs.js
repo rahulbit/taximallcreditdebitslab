@@ -7,18 +7,23 @@ const mongoose = require('mongoose'),
 let slabSchema = new Schema({
 
 
-    slabid:{
-        
-        type:'String',
-       unique:'true'
-    },
 
     startdate: {
 
         type: 'Date',
         default: ''
+      
 
     },
+
+    enddate:{
+
+        type:'String',
+        default:''
+
+    },
+    
+
 
     minslab: {
 
@@ -51,6 +56,11 @@ let slabSchema = new Schema({
         type: 'Number',
         default: ''
     },
+
+    status:{
+       type:'String',
+       default:''
+    }
 
    
 

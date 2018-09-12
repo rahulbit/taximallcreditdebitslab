@@ -21,12 +21,13 @@ let creditsdebitsSchema = new Schema({
 
     },
 
+   
     vehicleId:{
         type:'String',
         default:' '
     },
 
-    bookingid:{
+    bookingId:{
         type:'String',
         default:''
     },

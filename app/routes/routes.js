@@ -18,9 +18,10 @@ module.exports.setRouter = (app) => {
      app.get(`${baseUrl}/getslabdata`, slabController.getslabdata);
      
 
-  //   app.get(`${baseUrl}/getcreditdebits`, slabController.getcreditdebitdetails);
+     app.get( baseUrl+'/getcreditdebits/:bookingId', slabController.getcreditdebit);
 
-  
+    
+     app.post(`${baseUrl}/creditdebits`, slabController.calculatecreditdebit);
 
      // route to post the slabmodel by admin
     app.post(`${baseUrl}/slabs` , slabController.postslabdata);
